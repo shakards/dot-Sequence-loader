@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Sequence Loader</title>
+    <style>
+        .loader {
+            width: 60px;
+            aspect-ratio: 4;
+            background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 100% no-repeat;
+            animation: l2 1s steps(3) infinite;
+        }
+
+        @keyframes l2 {
+            to {
+                background-position: 150%;
+            }
+        }
+
+        /* Optional centering styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
